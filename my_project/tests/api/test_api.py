@@ -1,6 +1,5 @@
 import pytest
 
-
 @pytest.mark.change
 def test_remove_name(user):
     user.name = ''
@@ -9,9 +8,9 @@ def test_remove_name(user):
 
 @pytest.mark.check
 def test_name(user):
-    assert user.name == 'Sergii'
+    assert user.name == 'Viktoriia'
 
 
 @pytest.mark.check
 def test_second_name(user):
-    assert user.second_name == 'Butenko'
+    assert user.name == 'Vrublevska'
